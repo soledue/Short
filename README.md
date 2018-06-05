@@ -53,7 +53,7 @@ Before Siri can suggest shortcuts to the user, the app must tell Siri about the 
 
 ```swift
 let customIntent = Custom.intent
-Short.donateInteraction(for: Custom)
+Short.donateInteraction(for: customIntent)
 ```
 
 ### Handle Shortcuts.
