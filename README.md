@@ -21,20 +21,25 @@ To install Short using [Carthage](https://github.com/Carthage/Carthage), add the
 github "TheAbstractDev/Short"
 ```
 
+## Creating Custom Intents
+Before using Short, you'll have to create a new `SiriKit Intent Definition File`.
+
+![](Screenshots/1.png)
+
+Once the file is created, click on the + sign and select `New Intent` and add the associated properties.
+
+![](Screenshots/2.png)
+
+Your intent must be associated with a Class !
+
+![](Screenshots/3.png)
+
 ## Usage
 
 ```swift
 import Short
 ```
 
-### Creating Custom Intents.
-
-Before using Short, you'll have to create a new `SiriKit Intent Definition File`.
-Once the file is created, click on the + sign and select `New Intent` and add the associated properties.
-
-Your intent must be associated with a Class !
-
-### Getting Registered Shortcuts
 #### Getting All Shortcuts
 ```swift
 Short.getAllVoiceShortcuts { shortcuts in
