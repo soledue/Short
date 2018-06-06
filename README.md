@@ -39,7 +39,7 @@ Your intent must be associated with a Class !
 ```swift
 Short.getAllVoiceShortcuts { shortcuts in
     for shortcut in shortcuts {
-        print(shortcut.invocationPhrase) // prints "Swift"
+        print(shortcut)
     }
 }
 ```
