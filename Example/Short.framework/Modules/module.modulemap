@@ -1,0 +1,11 @@
+framework module Short {
+  umbrella header "Short.h"
+
+  export *
+  module * { export * }
+}
+
+module Short.Swift {
+    header "Short-Swift.h"
+    requires objc
+}
