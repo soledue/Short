@@ -38,9 +38,9 @@ Your intent must be associated with a Class !
 #### Getting All Shortcuts
 ```swift
 Short.getAllVoiceShortcuts { shortcuts in
-	for shortcut in shortcuts {
-		print(shortcut.invocationPhrase) // prints "Swift"
-	}
+    for shortcut in shortcuts {
+        print(shortcut.invocationPhrase) // prints "Swift"
+    }
 }
 ```
 
