@@ -42,7 +42,7 @@ Your intent must be associated with a Class !
 import Short
 ```
 
-#### Getting All Shortcuts
+#### Getting All Voice Shortcuts
 ```swift
 Short.getAllVoiceShortcuts { shortcuts in
     for shortcut in shortcuts {
@@ -51,7 +51,7 @@ Short.getAllVoiceShortcuts { shortcuts in
 }
 ```
 
-#### Getting a shortcut from an intent
+#### Getting a Voice Shortcut from an Intent
 ```swift
 let customIntent = CustomIntent()
 Short.getVoiceShortcutFrom(intent: customIntent) 
@@ -65,7 +65,7 @@ let customIntent = CustomIntent()
 Short.donateInteraction(for: customIntent)
 ```
 
-### Handle Shortcuts.
+### Handle User Activity.
 ```swift
 func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
     if let orderIntent = userActivity.interaction?.intent as? CustomIntent {
