@@ -1,5 +1,7 @@
 # Short
-Easly add Siri Shortcuts in your App. 
+Easly add Siri Shortcuts in your App.
+
+![](Screenshots/short.png)
 
 ## Prerequisites
 - iOS 12
