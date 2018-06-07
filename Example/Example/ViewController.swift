@@ -42,8 +42,6 @@ extension ViewController: INUIAddVoiceShortcutViewControllerDelegate {
     func addVoiceShortcutViewControllerDidCancel(_ controller: INUIAddVoiceShortcutViewController) {
         dismiss(animated: true)
     }
-    
-    
 }
 
 extension ViewController: INUIEditVoiceShortcutViewControllerDelegate {
@@ -60,6 +58,4 @@ extension ViewController: INUIEditVoiceShortcutViewControllerDelegate {
     func editVoiceShortcutViewControllerDidCancel(_ controller: INUIEditVoiceShortcutViewController) {
         dismiss(animated: true)
     }
-    
-    
 }
