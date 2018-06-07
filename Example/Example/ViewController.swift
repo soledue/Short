@@ -18,9 +18,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func addToSiriDidTapped(_ sender: Any) {
-        self.orderIntent.coffeeType = Order.coffeeType.expresso.rawValue
+        self.orderIntent.coffee = "Expresso"
         self.orderIntent.quantity = 1
-        self.orderIntent.extra = nil
         
         Order(from: self.orderIntent)
         Short.donateInteraction(for: self.orderIntent)

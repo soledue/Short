@@ -14,18 +14,18 @@
 		30355B3920C6E1610052736C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30355B3720C6E1610052736C /* LaunchScreen.storyboard */; };
 		3052DF9C20C8083000A9F351 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3052DF9B20C8083000A9F351 /* Intents.intentdefinition */; };
 		3052DF9E20C8090300A9F351 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052DF9D20C8090300A9F351 /* Order.swift */; };
-		3052DF9F20C80B7F00A9F351 /* Short.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3052DF9920C8081F00A9F351 /* Short.framework */; };
-		3052DFA020C80B7F00A9F351 /* Short.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3052DF9920C8081F00A9F351 /* Short.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30E2BFB020C983E3003C228E /* Short.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E2BFAF20C983E3003C228E /* Short.framework */; };
+		30E2BFB120C983E3003C228E /* Short.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30E2BFAF20C983E3003C228E /* Short.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3052DFA120C80B7F00A9F351 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3052DFA020C80B7F00A9F351 /* Short.framework in Embed Frameworks */,
+				30E2BFB120C983E3003C228E /* Short.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,9 +40,9 @@
 		30355B3520C6E1610052736C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30355B3820C6E1610052736C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30355B3A20C6E1610052736C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3052DF9920C8081F00A9F351 /* Short.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Short.framework; sourceTree = "<group>"; };
 		3052DF9B20C8083000A9F351 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		3052DF9D20C8090300A9F351 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		30E2BFAF20C983E3003C228E /* Short.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Short.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3052DF9F20C80B7F00A9F351 /* Short.framework in Frameworks */,
+				30E2BFB020C983E3003C228E /* Short.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +60,7 @@
 		30355B2220C6E1600052736C = {
 			isa = PBXGroup;
 			children = (
-				3052DF9920C8081F00A9F351 /* Short.framework */,
+				30E2BFAF20C983E3003C228E /* Short.framework */,
 				30355B2D20C6E1600052736C /* Example */,
 				30355B2C20C6E1600052736C /* Products */,
 			);
@@ -320,6 +320,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com-S-BEORS.Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

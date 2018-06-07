@@ -27,7 +27,7 @@
 			<string>OrderCoffee</string>
 			<key>INIntentParameterCombinations</key>
 			<dict>
-				<key>coffeeType,quantity</key>
+				<key>coffee,quantity</key>
 				<dict>
 					<key>INIntentParameterCombinationIsPrimary</key>
 					<true/>
@@ -38,24 +38,9 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Order ${quantity} ${coffeeType}</string>
+					<string>Order ${quantity} ${coffee}</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>hpSaG2</string>
-				</dict>
-				<key>coffeeType,quantity,extra</key>
-				<dict>
-					<key>INIntentParameterCombinationIsPrimary</key>
-					<false/>
-					<key>INIntentParameterCombinationSubtitle</key>
-					<string></string>
-					<key>INIntentParameterCombinationSubtitleID</key>
-					<string>fdnj39</string>
-					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<true/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Order ${quantity} ${coffeeType} with ${extra}</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>3JCmKt</string>
 				</dict>
 			</dict>
 			<key>INIntentParameters</key>
@@ -64,7 +49,7 @@
 					<key>INIntentParameterDisplayPriority</key>
 					<integer>1</integer>
 					<key>INIntentParameterName</key>
-					<string>coffeeType</string>
+					<string>coffee</string>
 					<key>INIntentParameterSupportsMultipleValues</key>
 					<false/>
 					<key>INIntentParameterTag</key>
@@ -83,18 +68,6 @@
 					<integer>4</integer>
 					<key>INIntentParameterType</key>
 					<string>Integer</string>
-				</dict>
-				<dict>
-					<key>INIntentParameterDisplayPriority</key>
-					<integer>3</integer>
-					<key>INIntentParameterName</key>
-					<string>extra</string>
-					<key>INIntentParameterSupportsMultipleValues</key>
-					<false/>
-					<key>INIntentParameterTag</key>
-					<integer>3</integer>
-					<key>INIntentParameterType</key>
-					<string>String</string>
 				</dict>
 			</array>
 			<key>INIntentResponse</key>

@@ -52,10 +52,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             switch response.code {
             case .success:
-                print(response)
+                print(OrderCoffeeIntentResponse.success(quantity: orderIntent.quantity!, coffee: orderIntent.coffee!))
                 return true
             case .failure:
-                print(response)
+                print(OrderCoffeeIntentResponse.failure(quantity: orderIntent.quantity!, coffee: orderIntent.coffee!))
                 return false
             default:
                 break
