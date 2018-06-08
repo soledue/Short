@@ -12,14 +12,6 @@ Easly add Siri Shortcuts in your App.
 - Xcode 10
 
 ## Installation
-
-### Cocoapods
-To install Short using [Cocoapods](http://cocoapods.org), add the following line to your Podfile:
-
-```
-pod 'TheAbstractDev/Short'
-```
-
 ### Carthage
 To install Short using [Carthage](https://github.com/Carthage/Carthage), add the following line to your Cartfile:
 
