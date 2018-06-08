@@ -1,12 +1,13 @@
 //
 //  AppDelegate.swift
-//  Example
+//  CoffeeExample
 //
-//  Created by Sofiane Beors on 05/06/2018.
+//  Created by Sofiane Beors on 08/06/2018.
 //  Copyright © 2018 S-BEORS. All rights reserved.
 //
 
 import UIKit
+import Short
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -40,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    
+
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         if let orderIntent = userActivity.interaction?.intent as? OrderCoffeeIntent {
             var response = OrderCoffeeIntentResponse()
@@ -52,18 +53,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             switch response.code {
             case .success:
-                print(OrderCoffeeIntentResponse.success(quantity: orderIntent.quantity!, coffee: orderIntent.coffee!))
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let main = storyboard.instantiateViewController(withIdentifier: "Main") as! UINavigationController
+                let orderListVC = storyboard.instantiateViewController(withIdentifier: "OrdersListTVC") as! OrdersListTVC
+                OrderManager.makeOrder(intent: orderIntent)
+                Short.donateInteraction(for: orderIntent)
+                self.window?.rootViewController = main
+                self.window?.makeKeyAndVisible()
+                main.pushViewController(orderListVC, animated: true)
                 return true
             case .failure:
-                print(OrderCoffeeIntentResponse.failure(quantity: orderIntent.quantity!, coffee: orderIntent.coffee!))
-                return false
+                print("Failed to order")
+                return true
             default:
                 break
             }
         }
         return false
     }
-
 
 }
 

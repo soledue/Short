@@ -20,27 +20,27 @@
 			<key>INIntentDescription</key>
 			<string>Order some coffee</string>
 			<key>INIntentDescriptionID</key>
-			<string>4W7tV1</string>
+			<string>e7kHcQ</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>4</integer>
+			<integer>3</integer>
 			<key>INIntentName</key>
 			<string>OrderCoffee</string>
 			<key>INIntentParameterCombinations</key>
 			<dict>
-				<key>coffee,quantity</key>
+				<key>coffeeType,quantity</key>
 				<dict>
 					<key>INIntentParameterCombinationIsPrimary</key>
 					<true/>
 					<key>INIntentParameterCombinationSubtitle</key>
 					<string></string>
 					<key>INIntentParameterCombinationSubtitleID</key>
-					<string>lendXV</string>
+					<string>PvOr5L</string>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Order ${quantity} ${coffee}</string>
+					<string>Orders ${quantity} ${coffeeType}</string>
 					<key>INIntentParameterCombinationTitleID</key>
-					<string>hpSaG2</string>
+					<string>bueYrF</string>
 				</dict>
 			</dict>
 			<key>INIntentParameters</key>
@@ -49,7 +49,7 @@
 					<key>INIntentParameterDisplayPriority</key>
 					<integer>1</integer>
 					<key>INIntentParameterName</key>
-					<string>coffee</string>
+					<string>coffeeType</string>
 					<key>INIntentParameterSupportsMultipleValues</key>
 					<false/>
 					<key>INIntentParameterTag</key>
@@ -65,7 +65,7 @@
 					<key>INIntentParameterSupportsMultipleValues</key>
 					<false/>
 					<key>INIntentParameterTag</key>
-					<integer>4</integer>
+					<integer>3</integer>
 					<key>INIntentParameterType</key>
 					<string>Integer</string>
 				</dict>
@@ -76,9 +76,9 @@
 				<array>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>Failed to order ${quantity} ${coffee}</string>
+						<string></string>
 						<key>INIntentResponseCodeFormatStringID</key>
-						<string>AJe7Dm</string>
+						<string>6bh0Kd</string>
 						<key>INIntentResponseCodeName</key>
 						<string>failure</string>
 						<key>INIntentResponseCodeSuccess</key>
@@ -86,9 +86,9 @@
 					</dict>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>Successfuly ordered ${quantity} ${coffee}</string>
+						<string></string>
 						<key>INIntentResponseCodeFormatStringID</key>
-						<string>VKd3Sg</string>
+						<string>1RMShZ</string>
 						<key>INIntentResponseCodeName</key>
 						<string>success</string>
 						<key>INIntentResponseCodeSuccess</key>
@@ -96,41 +96,16 @@
 					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
-				<integer>4</integer>
+				<integer>0</integer>
 				<key>INIntentResponseParameters</key>
-				<array>
-					<dict>
-						<key>INIntentResponseParameterDisplayPriority</key>
-						<integer>1</integer>
-						<key>INIntentResponseParameterName</key>
-						<string>coffee</string>
-						<key>INIntentResponseParameterSupportsMultipleValues</key>
-						<false/>
-						<key>INIntentResponseParameterTag</key>
-						<integer>1</integer>
-						<key>INIntentResponseParameterType</key>
-						<string>String</string>
-					</dict>
-					<dict>
-						<key>INIntentResponseParameterDisplayPriority</key>
-						<integer>2</integer>
-						<key>INIntentResponseParameterName</key>
-						<string>quantity</string>
-						<key>INIntentResponseParameterSupportsMultipleValues</key>
-						<false/>
-						<key>INIntentResponseParameterTag</key>
-						<integer>3</integer>
-						<key>INIntentResponseParameterType</key>
-						<string>Integer</string>
-					</dict>
-				</array>
+				<array/>
 			</dict>
 			<key>INIntentRestrictions</key>
 			<integer>0</integer>
 			<key>INIntentTitle</key>
-			<string>Order coffee</string>
+			<string>Order Coffee</string>
 			<key>INIntentTitleID</key>
-			<string>fxL2Zb</string>
+			<string>fL2iZL</string>
 			<key>INIntentType</key>
 			<string>Custom</string>
 			<key>INIntentUserConfirmationRequired</key>
