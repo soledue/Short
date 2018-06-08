@@ -78,10 +78,10 @@ func application(_ application: UIApplication, continue userActivity: NSUserActi
         
         switch response.code {
         case .success:
-	    print(response)
+	    // Do some stuff
             return true
         case .failure:
-            print(response)
+	    // Do some stuff
             return false
 	default:
             break
