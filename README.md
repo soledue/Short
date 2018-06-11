@@ -146,3 +146,10 @@ extension ViewController: INUIEditVoiceShortcutViewControllerDelegate {
     }
 }
 ```
+
+## Example
+You can test the Example project by downloading and running it.
+
+
+## License
+Short is available under the MIT license. See the LICENSE file for more info.
