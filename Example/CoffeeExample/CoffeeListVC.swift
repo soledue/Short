@@ -54,19 +54,7 @@ class CoffeeListVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let clearAction = UIAlertAction(title: "Confirm", style: .default) { (action: UIAlertAction) in
-            self.orderCoffeeIntent = OrderCoffeeIntent()
-            
-            switch indexPath.row {
-            case 0:
-                self.orderCoffeeIntent.coffeeType = OrderManager.coffeeType.expresso.rawValue
-            case 1:
-                self.orderCoffeeIntent.coffeeType = OrderManager.coffeeType.cappucino.rawValue
-            case 2:
-                self.orderCoffeeIntent.coffeeType = OrderManager.coffeeType.macciato.rawValue
-            default:
-                break
-            }
-            
+            self.orderCoffeeIntent.coffeeType = coffees[indexPath.row].rawValue
             self.orderCoffeeIntent.quantity = 1 as NSNumber
             OrderManager.makeOrder(intent: self.orderCoffeeIntent)
             Short.donateInteraction(for: self.orderCoffeeIntent)
