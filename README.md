@@ -91,7 +91,7 @@ func application(_ application: UIApplication, continue userActivity: NSUserActi
 ``` swift
 let customIntent = CustomIntent()
 let shortcut = Short.getShortcutFrom(intent: customIntent)
-if let shortcut = shortcut 
+if let shortcut = shortcut {
     Short.presentSiriShortcutViewController(from: self, shortcut: shortcut)
 }
 ```
@@ -101,7 +101,7 @@ If a phrase already exists for the shortcut, the user can also change the phrase
 ```swift
 let customIntent = CustomIntent()
 let shortcut = Short.getShortcutFrom(intent: customIntent)
-if let shortcut = shortcut 
+if let shortcut = shortcut {
    Short.presentExistingSiriShortcutViewController(existingShortcut: shortcut)
 }
 ```
