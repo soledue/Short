@@ -3,7 +3,7 @@
 [![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey.svg)](https://developer.apple.com/)
 [![License](https://img.shields.io/badge/license-MIT-999999.svg)](https://github.com/TheAbstractDev/Short/blob/master/LICENSE)
 
-Easly add Siri Shortcuts in your App.
+Short is a tiny wrapper that helps you to easily add Siri Shortcuts to your app with few lines of code.
 
 ![](Screenshots/short.png)
 
