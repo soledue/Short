@@ -51,7 +51,6 @@ public class Short {
     }
     
 //    public class func removeVoiceShortcut(_ shortcut: INVoiceShortcut) {
-////        INVoiceShortcutCenter.shared.
 //    }
     
     public class func presentSiriShortcutViewController(from: UIViewController, shortcut: INShortcut) {
